@@ -1,0 +1,76 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+/* Create a Parallax Effect */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+    background-image: url('../img/suh1.jpg');
+    min-height: 100%;
+}
+/* Second image (Portfolio) */
+
+.bgimg-2 {
+    background-image: url("../img/suh1.jpg");
+    min-height: 400px;
+}
+/* Third image (Contact) */
+
+.bgimg-3 {
+    background-image: url("../img/suh1.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+.bmc {
+    width: 150px;  /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border: 1px solid #ccc; /* Add a border */
+    margin: 10px;   /* Add some margin around the image */
+    display: block; /* Make the image display as a block element */
+  }
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+
+.logo {
+    display: block;
+    margin: 0px auto;
+}
