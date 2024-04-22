@@ -72,7 +72,7 @@
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p> Bem Vindo ao meu Website. Essa sou eu, Suellen Miranda, ou mais conhecida como Suh. Eu curso Ciência da Computação, tenho 19/20 anos e gosto muito de backend, mas me aventuro em frontend. Mesmo não gostando tanto de front, ainda gosto
+                <p> Bem Vindo ao meu Website. Essa sou eu, Suellen, ou mais conhecida como Suh. Eu curso Ciência da Computação, tenho <span id="idade"></span> e gosto muito de backend, mas me aventuro em frontend. Mesmo não gostando tanto de front, ainda gosto
                     bastante de pesquisar sobre, mesmo que não seja minha área mais almejada. Em paralelo com a faculdade eu estudo CyberSecurity, o que me tem deixado de certa forma, um pouco vidrada em estudar essa área. <br> Gosto bastante de desafios
                     pessoas, coisas como ter que pegar código antigo e melhorar, pegar código fonte de algum lugar copiar e ir desfazendo ele para ver o que acontece e como é feito as coisas é bem divertido, quando não estou com tantas entregas de trabalho
                     e provas na faculdade (o que de certa forma em breve irá acabar). Digamos que dentre tantos sites, esse é o que mais tem sido o mais completo e adimirado.</p>
@@ -391,7 +391,7 @@
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
-                <a href=""> <img src="../img/map.jpg" class="w3-image w3-round" style="width:100%"></a>
+                <a href=""> <img src="../img/p1.jpg" class="w3-image w3-round" style="width:100%"></a>
 
             </div>
             <div class="w3-col m8 w3-panel">
@@ -451,6 +451,30 @@
 
 
     <script>
+        //Minha Idade
+        function calcularIdade() {
+        
+        const hojeEmMilisegundos = Date.now();                                                                         // Data de hoje em milissegundos
+        const dataDeNascimentoString = "09/10/2002";                                                                   // Data de nascimento como string (substitua com sua data)
+        const dataDeNascimentoEmMilisegundos = Date.parse(dataDeNascimentoString);                                     // Data de nascimento em milissegundos
+        const diferencaEmMilisegundos = hojeEmMilisegundos - dataDeNascimentoEmMilisegundos;                           // Diferença em milissegundos 
+        const anos = Math.floor(diferencaEmMilisegundos / 31536000000);                                                // Anos    
+        const mesesRestantes = Math.floor((diferencaEmMilisegundos % 31536000000) / (31536000000 / 12));               // Meses restantes
+        const diasRestantes = Math.floor((diferencaEmMilisegundos % (31536000000 / 12)) / (31536000000 / (12 * 30)));  // Dias restantes
+
+        // Formatar idade como string
+        //const idadeString = `${anos} anos, ${mesesRestantes} meses e ${diasRestantes} dias`;                           //XXanos, XX meses e XX dias.
+        const idadeString = `${anos} anos e ${mesesRestantes} meses,`;                                                 // XX anos e XX meses
+
+        // Atualizar o conteúdo da tag #idade
+        document.getElementById("idade").innerHTML = idadeString;
+        }
+
+        // Executar a função quando a página carregar
+        window.onload = calcularIdade;
+
+
+
         // Optional: Add validation or other actions before submission
         function cadastro() {
             const name = document.querySelector("input[name='Name']").value;
