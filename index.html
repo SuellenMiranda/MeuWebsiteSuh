@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <title>Meu Website _Suh </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,93 +11,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="/style/style.css">
 
 </head>
-
-<style>
-    body,h1,h2,h3,h4,h5,h6 {
-        font-family: "Lato", sans-serif;
-    }
-
-    body,
-    html {
-        height: 100%;
-        color: #777;
-        line-height: 1.8;
-    }
-    /* Create a Parallax Effect */
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    /* First image (Logo. Full height) */
-
-    .bgimg-1 {
-        background-image: url('./img/suh1.jpg');
-        min-height: 50%;
-    }
-    /* Second and Third image (Portfolio and Contact) */
-
-    .bgimg-2,
-    .bgimg-3 {
-        background-image: url("./img/suh1.jpg");
-        min-height: 25%;
-    }
-
-    .w3-wide {
-        letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-        cursor: pointer;
-    }
-
-    .bmc {
-        width: 150px;  /* Set the width of the image */
-        height: 150px; /* Set the height of the image */
-        border: 1px solid #ccc; /* Add a border */
-        margin: 10px;   /* Add some margin around the image */
-        display: block; /* Make the image display as a block element */
-    }
-
-    table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    }
-
-    td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }
-
-    tr:nth-child(even) {
-    background-color: #dddddd;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-
-    @media only screen and (max-device-width: 1600px) {
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            background-attachment: scroll;
-            min-height: 400px;
-        }
-    }
-
-    .logo {
-        display: block;
-        margin: 0px auto;
-    }
-</style>
 
 <body>
     <!-- Navbar (sit on top) -->
@@ -108,9 +25,9 @@
             </a>
             <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"> HOME</i></a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJETOS</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATO</a>
             <a href="#skill" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> HABILIDADES</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> EXPERIÊNCIA & PROJETOS</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATO</a>
             <!-- <a href="#language" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-language"></i> IDIOMA</a> -->
 
         </div>
@@ -124,7 +41,8 @@
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
         <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE</a>
-        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJETOS</a>
+        <a href="#skill" class="w3-bar-item w3-button" onclick="toggleFunction()">HABILIDADES</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIÊNCIA & PROJETOS</a>
         <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATO</a>
         <a href="#language" class="w3-bar-item w3-button" onclick="toggleFunction()">LANGUAGE</a>
         <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
@@ -159,42 +77,118 @@
                     e provas na faculdade (o que de certa forma em breve irá acabar). Digamos que dentre tantos sites, esse é o que mais tem sido o mais completo e adimirado.</p>
             </div>
         </div>
-        <p class="w3-large w3-center w3-padding-16">Minhas Habilidades:</p>
-        <p class="w3-wide"><i class="fa fa-folder-open"></i>Programação</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
-        </div>
+      </div>
+        
+      <div id="skill">
 
-        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+          <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"></span>MINHAS HABILIDADES</span>
+          </div>
         </div>
-    </div>
+          
+        <div class="custom-container">
+        
+          <div class="custom-section">
+              <h2 class="custom-title">Competências Técnicas</h2>
+              <table class="custom-table">
+                  <tr>
+                      <th>Competências</th>
+                      <th>Competências</th>
+                  </tr>
+                  <tr>
+                      <td>Golang</td>
+                      <td>React</td>
+                  </tr>
+                  <tr>
+                      <td>Python</td>
+                      <td>React Native</td>
+                  </tr>
+                  <tr>
+                      <td>CSS</td>
+                      <td>C</td>
+                  </tr>
+                  <tr>
+                      <td>HTML</td>
+                      <td>C++</td>
+                  </tr>
+                  <tr>
+                      <td>Java</td>
+                      <td>C#</td>
+                  </tr>
+                  <tr>
+                      <td>JavaScript</td>
+                      <td>PHP</td>
+                  </tr>
+                  <tr>
+                      <td>SQL</td>
+                      <td>TypeScript</td>
+                  </tr>
+                  <tr>
+                      <td>MySQL</td>
+                      <td>NodeJS</td>
+                  </tr>
+                  <tr>
+                      <td>VueJS</td>
+                      <td>REST</td>
+                  </tr>
+                  <tr>
+                      <td>API</td>
+                      <td>AWS</td>
+                  </tr>
+                  <tr>
+                      <td>Figma</td>
+                      <td>Adobe XD</td>
+                  </tr>
+                  <tr>
+                      <td>Git</td>
+                      <td>Bitbucket</td>
+                  </tr>
+                  <tr>
+                      <td>Asana</td>
+                      <td>Jira</td>
+                  </tr>
+                  <tr>
+                      <td>Microsoft Office</td>
+                      <td>Design System</td>
+                  </tr>
+                  <tr>
+                      <td>Acessibilidade</td>
+                      <td></td>
+                  </tr>
+              </table>
+          </div>
+  
+          <div class="custom-section">
+              <h2 class="custom-title">Competências Comportamentais</h2>
+              <ul class="custom-behavioral-list">
+                  <li>Análise de Problemas</li>
+                  <li>Comprometimento</li>
+                  <li>Comunicação</li>
+                  <li>Colaboração</li>
+                  <li>Organização</li>
+                  <li>Relacionamento interpessoal</li>
+                  <li>Proatividade</li>
+                  <li>Empatia</li>
+                  <li>Tomada de decisões estratégicas</li>
+                  <li>Adaptação</li>
+                  <li>Resolução de problemas</li>
+                  <li>Compartilhamento de conhecimento</li>
+                  <li>Liderança</li>
+                  <li>Estabelecimento de confiança</li>
+                  <li>Tomada de decisão sob pressão</li>
+              </ul>
+          </div>
+      </div>
 
-    <div class="competencia w3-content w3-container w3-padding-40" id="skill">
-        <p class="w3-large w3-center w3-padding-16"><i class="fa fa-users"></i> Competências</p>
-
-        <div class="w3-row m6 w3-hide-small w3-padding-large">
-            <p class="w3-wide"><i class="fa fa-users"></i>Comunicação</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Trabalho em equipe</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Controle emocional</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Diplomata</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Linderança</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Inovador e Criativo</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Resiliência</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Pensamentos lógicos</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Pensamentos Críticos</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Empatia</p>
-            <p class="w3-wide"><i class="fa fa-users"></i>Ser ávido pelo aprendizado contínuo</p>
-        </div>
-    </div>
+      </div>
 
     <br>
     <br>
 
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">3</span><br> Projetos
+            <span class="w3-xlarge">3</span><br> PROJETOS
         </div>
         <div class="w3-quarter w3-section">
             <span class="w3-xlarge">14</span><br> Estrelas
@@ -212,16 +206,118 @@
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">PROJETOS</span>
+          <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"></span>EXPERIÊNCIAS & PROJETOS</span>
         </div>
     </div>
 
     <!-- ************** DAQUI EM DIANTE TERMINAR! ********************** -->
 
+    <!-- Slideshow -->
+    <div class="w3-container" style="text-align: center;">
+      <div class="w3-display-container mySlides">
+        <img src="./img/logo-tutuba.png" style="width:33%">
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          <span class="w3-white w3-padding-large w3-animate-bottom">Tubarões UVV</span>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img src="./img/Logo Sem Fundo.png" style="width:20%">
+        <div class="w3-display-topright w3-container w3-padding-32">
+          <span class="w3-white w3-padding-large w3-animate-bottom">Liga Feminina de TI</span>
+        </div>
+      </div>
+      <!-- Novas Imagens -->
+      <div class="w3-display-container mySlides">
+        <img src="./img/jade-logo.jpg" style="width: 27%;">
+        <div class="w3-display-topleft w3-container w3-padding-32">
+            <span class="w3-white w3-padding-large w3-animate-bottom">Jade Autism</span>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+          <img src="./img/logo-bjc.png" style="width: 20%;">
+          <div class="w3-display-topright w3-container w3-padding-32">
+              <span class="w3-white w3-padding-large w3-animate-bottom">BJC - Tradução de Conteúdo</span>
+          </div>
+      </div>
+      <div class="w3-display-container mySlides">
+          <img src="./img/vale-logo-0.png" style="width: 20%;">
+          <div class="w3-display-bottomleft w3-container w3-padding-32">
+              <span class="w3-white w3-padding-large w3-animate-bottom">UVV|DEV</span>
+          </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img src="./img/logo-uvv.png" style="width: 30%;">
+        <div class="w3-display-bottomright w3-container w3-padding-32">
+            <span class="w3-white w3-padding-large w3-animate-bottom">Universidade Vila Velha</span>
+        </div>
+    </div>
+    </div>
+
+
+      <!-- Slideshow next/previous buttons -->
+      <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+        <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+        <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+      
+        <div class="w3-center">
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+        </div>
+      </div>
+    </div>
+
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">MEUS PROJETOS</h3>
-        <p class="w3-center"><em>Meu projetos no github, alguns podem ter parado de funcionar por motivos de atualizações.</em></p><br>
+        <h3 class="w3-center">EXPERIÊNCIA PROFISSIONAL & MEUS PROJETOS</h3>
+
+        <p class="w3-center"><em>Minhas Experiências Profissionais.</em></p><br>
+
+        <table>
+          <tr>
+            <th>Lugar</th>
+            <th>Onde</th>
+            <th>Descição resumida</th>
+            <th>Data</th>
+          </tr>
+          <tr>
+            <th>Liga Feminina de Ti</th>
+            <th>Vila Velha - Espírito Santo (Híbrido)</th>
+            <th>Voluntariado em Liga Feminina de Ti</th>
+            <th>05/2024 a [Atual]</th>
+          </tr>
+          <tr>
+            <th>Jade Autism</th>
+            <th>Vitória - Espírito Santo (Híbrido)</th>
+            <th>Desenvolvedor, Design Web e Ilustrações</th>
+            <th>11/2023 a 06/2024</th>
+          </tr>
+          <tr>
+            <th>Vale|UVV</th>
+            <th>Vila Velha -Espírito Santo (Remoto)</th>
+            <th>Desenvolvedor Unity em Realidade Virtual</th>
+            <th>08/2023 a 12/2023</th>
+          </tr>
+          <tr>
+            <th>Monitoria|UVV</th>
+            <th>Vila Velha - Espírito Santo (Presencial)</th>
+            <th>Monitoria de Design e Desenvolvimento de Banco de Dados</th>
+            <th>07/2020 a 06/2023</th>
+          </tr>
+          <tr>
+            <th>Diretoria Acadêmica (E-Sports) |UVV</th>
+            <th>Vila Velha - Espírito Santo (Híbrido)</th>
+            <th>Representação estudantil dos cursos de Ciência da Computação e Sistema de Informação.</th>
+            <th>02/2021 a 12/2022</th>
+          </tr>
+        </table>
+
+
+        <p class="w3-center"><em>Meu projetos no github, alguns podem ter parado de funcionar por motivos de atualizações mas que estarem em processo de arruma-los.</em></p><br>
 
         <table>
             <tr>
@@ -431,21 +527,27 @@
         <p class="w3-center"><em>Eu vou amar seu feedback!</em></p>
 
         <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
+            <div class="w3-col m4 w3-container" style="display: inline-block;">
                 <a href=""> <img src="./img/me.jpg" class="w3-image w3-round" style="width:100%" alt="Cat"></a>
-
+                <p> Doações </p>
+                    <a href="https://www.buymeacoffee.com/suuh" target="_blank" style="text-decoration:none" class="w3-hover-text-yellow"><i class="fa fa-coffee fa-fw w3-xlarge w3-margin-right"></i> Doar um copo de café?<br></a>
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Vila Velha, ES<br>
-                    <a href="https://bityli.com/rzTOcti" style="text-decoration:none"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://wa.me/5527988479887">(27) 9.8847-9887</a><br></a>
+                    <a href="https://bityli.com/rzTOcti" style="text-decoration:none"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://wa.me/5527988479887" target="_grey">(27) 9.8847-9887</a><br></a>
                     <a href="mailto:suellen.org@gmail.com" style="text-decoration:none"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> suellen.org@gmail.com<br></a>
+                    <p> Redes Sociais </p>
+                    <a href="https://www.instagram.com/mayukosuh/" style="text-decoration:none" target="_grey" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity fa-fw w3-xlarge w3-margin-right"></i>Instagram.com<br></a>
+                    <a href="https://www.twitch.tv/suh_euclxel" style="text-decoration:none" target="_grey" class="w3-hover-text-green"><i class="fa fa-twitch fa-fw w3-xlarge w3-margin-right"></i>Twitch.tv<br></a>
+                    <a href="https://github.com/SuellenMiranda" style="text-decoration:none" target="_grey" class="w3-hover-text-green"><i class="fa fa-github fa-fw w3-xlarge w3-margin-right"></i>GitHub.com<br></a>
+                    <a href="https://www.linkedin.com/in/suellenmiranda/" style="text-decoration:none" target="_grey" class="w3-hover-text-green"><i class="fa fa-linkedin w3-hover-opacity fa-fw w3-xlarge w3-margin-right"></i>Linkedin.com<br></a>
+                    
+
+
                 </div>
-
-                
-                <p>Me doe um copo de café <i class="fa fa-coffee"></i> escaneando o qr code abaixo ou acesse <a href="https://www.buymeacoffee.com/suuh">https://www.buymeacoffee.com/suuh</a></p>
-
-                <img class="bmc" src="./img/bmc_qr.png" alt="Buy-me-a-coffee-Suh">
+                <!--<p>Me doe um copo de café <i class="fa fa-coffee"></i> escaneando o qr code abaixo ou acesse <a href="https://www.buymeacoffee.com/suuh">https://www.buymeacoffee.com/suuh</a></p>
+                <img class="bmc" src="./img/bmc_qr.png" alt="Buy-me-a-coffee-Suh">-->
                 </div>
             </div>
         </div>
@@ -455,19 +557,7 @@
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Voltar ao TOPO</a>
-        <div class="w3-xlarge w3-section">
-
-            <a href="https://www.instagram.com/mayukosuh/" title="me" target="_grey" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-            <a href="https://www.twitch.tv/suh_euclxel" title="me" target="_grey" class="w3-hover-text-green"><i class="fa fa-twitch"></i></a>
-            <a href="https://br.pinterest.com/Eu_EUCLXEL/" title="me" target="_grey" class="w3-hover-text-green"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-            <a href="https://www.twitch.tv/suh_euclxel" title="me" target="_grey" class="w3-hover-text-green"><i class="fa fa-github"></i></a>
-            <a href="https://twitter.com/Suh_EUCLXEL" title="me" target="_grey" class="w3-hover-text-green"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-            <a href="https://www.linkedin.com/in/suellenmiranda/" title="me" target="_grey" class="w3-hover-text-green"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-
-        </div>
-
-        <p>Feito por by <a href="https://github.com/SuellenMiranda/Suellen-Kitten" title="me" target="_grey" class="w3-hover-text-green">Suh</a></p>
-
+        <p>Feito por by <a href="https://github.com/SuellenMiranda/SuellenMiranda" title="me" target="_grey" class="w3-hover-text-green">Suh</a></p>
     </footer>
 
 
@@ -525,6 +615,33 @@
             } else {
                 x.className = x.className.replace(" w3-show", "");
             }
+        }
+        // Slideshow
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demodots");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length} ;
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
         }
     </script>
 
